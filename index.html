@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/dist/app.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="app">
+    <div class="users" data-component="users">
+        <div class="users__container">
+            <form class="users__form" data-users-ref="form">
+                <div class="users__element">
+                    <input class="users__input" type="text" placeholder="Имя" data-users-ref="name"/>
+                    <div class="users__message" data-users-ref="message"></div>
+                </div>
+                <div class="users__element">
+                    <select class="users__select" data-users-ref="type">
+                        <option value="1">Физическое лицо</option>
+                        <option value="2">Юридическое лицо</option>
+                    </select>
+                </div>
+                <div class="users__element">
+                    <input
+                            class="users__input"
+                            type="number"
+                            min="0"
+                            maxLength="13"
+                            placeholder="Номер потребителя (13 цифр)"
+                            data-users-ref="user-number"
+                    />
+                    <div class="users__message" data-users-ref="message"></div>
+                </div>
+                <button class="users__button button" type="submit">Создать</button>
+            </form>
+            <form class="users__form-filter">
+                <div class="users__filter">
+                    <select class="users__filter-select" data-users-ref="filter">
+                        <option value="0">Сбросить фильтр</option>
+                        <option value="1">Физическое лицо</option>
+                        <option value="2">Юридическое лицо</option>
+                    </select>
+                </div>
+            </form>
+            <div class="users__table-wrapper">
+                <table class="users__table">
+                    <thead>
+                    <tr class="users__row">
+                        <th class="users__cell">Имя</th>
+                        <th class="users__cell">Тип</th>
+                        <th class="users__cell">Номер потребителя</th>
+                        <th class="users__cell"></th>
+                        <th class="users__cell"></th>
+                    </tr>
+                    </thead>
+                    <tbody class="users__tbody" data-users-ref="users-tbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/dist/app.js"></script>
+</body>
+</html>
+</html>

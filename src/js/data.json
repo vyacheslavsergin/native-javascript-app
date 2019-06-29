@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 73334,
+      "firstName": "Дмитрий",
+      "type": 1,
+      "userNumber": "1122334455667"
+    },
+    {
+      "id": 83334,
+      "firstName": "Михаил",
+      "type": 2,
+      "userNumber": "1122334455667"
+    },
+    {
+      "id": 93334,
+      "firstName": "Илья",
+      "type": 1,
+      "userNumber": "1122334455667"
+    },
+    {
+      "id": 53334,
+      "firstName": "Николай",
+      "type": 2,
+      "userNumber": "1122334455667"
+    }
+  ]
+}
